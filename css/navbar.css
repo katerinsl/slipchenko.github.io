@@ -1,0 +1,61 @@
+@media (min-width: 576px) {
+    .navbar {
+        grid-column-start: 2;
+        grid-column-end: 3;
+    }
+}
+
+header {
+    position: fixed;
+    top: 0;
+    width: 100%;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.navbar .logo {
+    display: block;
+    text-decoration: none;
+    font-family: 'Roboto', sans-serif;
+    color: white;
+
+}
+
+.navbar .navmenu,
+.navbar .navmenu li {
+ 
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.navbar .navmenu {
+    
+
+    display: flex;
+    flex-direction: row;
+}
+
+.navbar .navmenu a {
+    color: white;
+    
+    font-family: 'Roboto', sans-serif;
+    font-size: 15px;
+    letter-spacing: 2px;
+
+    display: block;
+    padding: 1em 2em;
+    text-decoration: none;
+}
+/*
+.navbar .navmenu li.active a,
+.navbar .navmenu a:hover {
+    color: red;
+    background-color: rgba(255,255,255,0.8);
+
+
+}

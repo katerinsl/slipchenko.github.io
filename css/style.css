@@ -1,0 +1,110 @@
+html {
+
+    scroll-behavior: smooth;
+}
+/*
+element.style {
+    background-image: url(img/21.jpg);
+    background-repeat: no-repeat;
+    background-position: right;
+}
+*/
+html,
+* {
+    margin-top: 0;
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+
+}
+/*
+.content{
+    height: 100vh;
+  justify-content: center;
+  margin: 0;
+  max-width: 100%;
+  width: 100vw;
+}*/
+
+
+
+/* < 576px => 100% */
+.section {
+    display: grid;
+    grid-template-columns: 1fr;
+}
+
+.container {
+    min-height: 100vh;
+}
+
+/* 540px */
+@media (min-width: 576px) {
+    .section {
+        grid-template-columns: 1fr 540px 1fr;
+    }
+
+    .container,
+    .navbar {
+        grid-column-start: 2;
+        grid-column-end: 3;
+    }
+}
+
+/* 720px */
+@media (min-width: 768px) {
+    .section {
+        grid-template-columns: 1fr 720px 1fr;
+    }
+}
+
+/* 960px */
+@media (min-width: 992px) {
+    .section {
+        grid-template-columns: 1fr 960px 1fr;
+    }
+}
+
+/* 1140px */
+@media (min-width: 1200px) {
+    .section {
+        grid-template-columns: 1fr 1140px 1fr;
+    }
+}
+
+.section {
+    background-color: black;
+}
+
+.home.section {}
+
+.home.section .container {}
+
+.about.section {}
+
+.portfolio.section {}
+
+.contacts.section {}
+
+.contacts .container a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 6em;
+    height: 6em;
+    text-decoration: none;
+}
+
+.contacts .container a i {
+    font-size: 5em;
+}
+
+
+.contacts .container a header {
+    position: fixed;
+    top: 0;
+    width: 100%;
+}
+
