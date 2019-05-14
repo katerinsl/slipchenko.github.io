@@ -10,6 +10,17 @@
 
 }
 
+.portfolio a:hover img {
+    transform: scale(1.15, 1.15);
+
+}
+
+.portfolio a img {
+    transition: all 0.25s ease-in-out;
+
+
+}
+
 .img-fit {
     overflow: hidden;
 }
@@ -20,7 +31,7 @@
     height: auto;
 
 }
- 
+
 
 
 .img1 {
